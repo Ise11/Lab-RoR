@@ -1,0 +1,12 @@
+<h1>Witaj!</h1>
+<p>pierwszy widok</p>
+
+<% @users.each do |user| %>
+    <p>
+        
+        <%= user.email %>
+    </p>
+<% end %>
+
+<%= link_to 'Taski', tasks_path %>
+<%= link_to 'Najnowszy', @last_task if @last_task %>

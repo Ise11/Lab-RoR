@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Lista wyzwań</h1>
+
+<%= render "tasks/table", tasks: @tasks %>
+
+<br>
+<%= link_to 'index', root_path %>
+<%= link_to 'New Task', new_task_path %>
